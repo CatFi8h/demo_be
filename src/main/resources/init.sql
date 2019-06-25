@@ -1,0 +1,3 @@
+CREATE USER demo_test;
+CREATE DATABASE demo;
+GRANT ALL PRIVILEGES ON DATABASE demo TO demo_test;
