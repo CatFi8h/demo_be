@@ -18,11 +18,11 @@ public class Log {
     private Long id;
     @Column
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss.SSS")
-    private LocalDateTime time;
+    private LocalDateTime timeline;
 
     @PrePersist
     public void prePersist() {
-        this.time = LocalDateTime.now();
+        this.timeline = LocalDateTime.now();
     }
 
 
